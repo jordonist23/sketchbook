@@ -1,0 +1,229 @@
+body {}
+
+.container {
+    width: 75%;
+    height: 160px;
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: auto;
+}
+
+.legend {
+    padding: 2px;
+}
+
+.legend-container {
+    padding: 8px;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    /* border: 2px solid black; */
+    width: 65%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: 5px;
+
+}
+
+.legend-container span {
+    font-size: .6em;
+}
+
+.metals-sq i {
+    color: rgb(182, 234, 250);
+}
+
+.metalloids-sq i {
+    color: rgb(210, 178, 220);
+}
+
+.non-metals-sq i {
+    color: rgb(245, 182, 108);
+}
+
+.hydrogen-sq i {
+    color: rgb(245, 182, 108);
+}
+
+.cell-0 {
+    display: grid;
+    padding: 2px;
+    grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.legend {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.cell-1 {
+    height: 150px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    /* border-radius: 10px; */
+    grid-template-rows: .25fr .25fr .5fr .25fr .25fr;
+    grid-template-columns: 1fr;
+   
+}
+
+.cell-1 span {
+    border-image: linear-gradient(98deg, #fff , #232326) 1;
+}
+
+.cell-2 {
+    /* padding-top: 1px; */
+    height: 150px;
+    width: 97%;
+    border: 2px solid black;
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-template-rows: .25fr .25fr .5fr .25fr .25fr;
+    grid-template-columns: .25fr 1fr .25fr;
+    border-radius: 10px;
+    background-color:  rgb(245, 182, 108);;
+    
+}
+
+.cell-3 {
+    height: 150px;
+    width: 125px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    /* border-radius: 10px; */
+    grid-template-rows: .25fr .25fr .5fr .25fr .25fr;
+    grid-template-columns: 1fr;
+
+}
+
+.cell-3 span {
+    border-image: linear-gradient(98deg, #232326 ,  #fff) 1;
+}
+.label-anum {
+    text-align: right;
+    height: 23px;
+    padding-right: 5px;
+    animation: .5s;
+    border-bottom: 1px solid rgb(40, 20, 20);
+}
+
+
+.label-elec-n {
+    grid-row-start: 2;
+    height: 23px;
+    padding-right: 5px;
+    text-align: right;
+    border-bottom: 1px solid rgb(40, 20, 20);
+   
+}
+
+.label-symbol {
+    grid-row-start: 3;
+    padding-right: 5px;
+    text-align: right;
+    height: 57px;
+    border-bottom: 1px solid rgb(40, 20, 20);
+
+
+}
+
+   
+.label-el-name {
+    grid-row-start: 4;
+    padding-right: 5px;
+    text-align: right;
+    border-bottom: 1px solid black;
+}
+
+.label-mass-num {
+    grid-row-start: 5;
+    padding-right: 5px;
+    text-align: right;
+    border-bottom: 1px solid black;
+
+}
+
+.label-comm-io-charge {
+    font-size: .75em;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+
+
+}
+
+.label-other-io-charge {
+    font-size: .75em;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+    height: 14.17px;
+
+}
+
+.symbol {
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    /* border: 1px solid black; */
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.name {
+    text-align: center;
+    /* border: 1px solid black; */
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+.atom-num {
+    padding-left: 5px;
+    font-weight: bold;
+    /* border: 1px solid black; */
+}
+
+.common-ion-charge {
+    text-align: right;
+    padding-right: 5px;
+    /* border: 1px solid black; */
+    grid-column-start: 3;
+    grid-row-start: 1;
+
+}
+
+.other-ion-charge {
+    text-align: right;
+    padding-right: 5px;
+    /* border: 1px solid black; */
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.mass-num {
+    text-align: center;
+    /* border: 1px solid black; */
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
+
+.elec-neg {
+    padding-left: 5px;
+    /* border: 1px solid black; */
+    grid-row-start: 2;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+}
