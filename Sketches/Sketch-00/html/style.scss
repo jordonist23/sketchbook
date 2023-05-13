@@ -1,0 +1,199 @@
+
+body{
+    margin: 5px auto;
+    font: 'Montserrat';
+ }
+ .title{
+    width: 95%;
+    height: 75px;
+    background-color: aquamarine;
+    margin: 10px auto;
+    padding: 10px;
+ }
+ input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+   .search-container button {
+    /* float: right; */
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background:  aqua;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+   .search-container button:hover {
+    background:  aquamarine;
+  }
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.75fr 1fr 1fr;
+    height: 350px;
+    width: 75%;
+    margin: auto;
+}
+
+#container-2 {
+    width: 95%;
+    /* background-color: blanchedalmond; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(18,.070fr);
+    grid-template-rows: repeat(18, 120px);
+
+ /* position: relative; */
+ grid-template-areas: "a1 . . . . . . . . . . . . . . . . a2"
+"a3 a4 . . . . . . . . . . a5 a6 a7 a8 a9 a10"
+"a11 a12 . . . . . . . . . . a13 a14 a15 a16 a17 a18"
+"a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 a31 a32 a33 a34 a35 a36"
+"a37 a38 a39 a40 a41 a42 a43 a44 a45 a46 a47 a48 a49 a50 a51 a52 a53 a54"
+"a55 a56 a57 a72 a73 a74 a75 a76 a77 a78 a79 a80 a81 a82 a83 a84 a85 a86"
+"a87 a88 a89 a104 a105 a106 a107 a108 a109 a110 a111 a112 a113 a114 a115 a116 a117 a118"
+". . . a58 a59 a60 a61 a62 a63 a64 a65 a66 a67 a68 a69 a70 a71 ."
+". . . a90 a91 a92 a93 a94 a95 a96 a97 a98 a99 a100 a101 a102 a103 .";
+}
+#cell-big {
+    background-color: aquamarine;
+    border: 12px solid aqua;
+    border-radius: 9px;
+    height: 225px;
+    display: grid;
+    grid-column-start: 3;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr;
+    grid-template-columns: .5fr 3fr .5fr;
+}
+
+.atom-num {
+    grid-row-start: 1;
+    grid-row-end:3 ;  
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-left: 6px;
+}
+
+.elec-neg {
+    grid-row-start: 4;
+    grid-row-end:5 ;
+    grid-column-start: 1;
+    font-size: medium;
+    /* font-weight: bold; */
+    padding-left: 6px;
+}
+.symbol {
+    grid-row-start: 3;
+    grid-row-end:12;
+    grid-column-start: 2;
+    font-size: 6em;
+    font-weight: bolder;
+    padding-left: 6px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.atom-name {
+    grid-row-start: 12;
+    grid-row-end:14;
+    grid-column-start: 2;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-left: 6px;
+    text-align: center;
+}
+
+.atom-mass {
+    grid-row-start: 14;
+    grid-row-end:16;
+    grid-column-start: 2;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-left: 6px;
+    text-align: center;
+}
+
+#cell-1-mini{
+    background-color: aquamarine;
+    border: 5px solid aqua;
+    border-radius: 9px;
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-column-start: 3;
+    grid-template-rows:  .85fr .5fr 3fr 1fr 1fr;
+    grid-template-columns: .5fr 3fr .5fr;
+    
+}
+#cell-2-mini{
+    background-color: aquamarine;
+    border: 5px solid aqua;
+    border-radius: 9px;
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-column-start: 3;
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-columns: .5fr 3fr .5fr; 
+    grid-area: a2;
+}
+
+.atom-num {
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    font-size:x-large;
+    font-weight: bolder;
+    padding-left: 6px;
+}
+.small-atom-num {
+    grid-row-start: 1;
+    grid-row-end:2 ;
+    grid-column-start: 1;
+    font-size:small;
+    font-weight: bolder;
+    padding-left: 6px;
+}
+.small-elec-neg {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    font-size:xx-small;
+    /* font-weight: bold; */
+    padding-left: 6px;
+    margin: 0;
+}
+.small-symbol {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    font-size: 46px;
+    font-weight: bolder;
+    /* padding-left: 6px; */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin: 0;
+}
+.small-atom-name {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    font-size: xx-small;
+    font-weight: bolder;
+    padding-left: 6px;
+    text-align: center;
+    margin: 0;
+}
+
+.small-atom-mass {
+    grid-row-start: 5;
+    grid-column-start: 2;
+
+    font-size: small;
+    font-weight: bolder;
+    padding-left: 6px;
+    text-align: center;
+    margin: 0;
+
+}

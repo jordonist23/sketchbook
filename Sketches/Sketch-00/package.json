@@ -1,0 +1,20 @@
+{
+  "name": "sketch-00",
+  "version": "1.0.0",
+  "description": "",
+  "main": "element.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "pug": "^2.0.4"
+  }
+
+}
